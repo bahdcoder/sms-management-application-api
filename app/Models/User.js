@@ -9,7 +9,7 @@ const Message = use('App/Models/Message')
 class User extends Model {
 
   static get hidden () {
-    return ['password', 'email', 'created_at', 'updated_at']
+    return ['password', 'created_at', 'updated_at']
   }
   
   static boot () {

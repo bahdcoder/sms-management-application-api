@@ -5,6 +5,8 @@ This project is built on the adonis framework. To make development faster, insta
 
  - Clone repository
  - Install npm dependencies
+ - Create a file `.env` at project root, and use `.env.example` as a sample to setup your environment variables. For database, setup mysql or sqlite3. your choice.
+ - Be sure to generate application key using `adonis key:generate`
  - Run migrations using command `adonis migration:run`
  - Run seeders using command `adonis seed`
  - Run application using `adonis serve --dev`
@@ -12,7 +14,7 @@ This project is built on the adonis framework. To make development faster, insta
  - To get a list of users with authentication tokens for them, make api request to `https://localhost:3333/`
 
 
-#### Available endpoints
+#### API DOCUMENTATION / Available endpoints
 
 All endpoints are authenticated except `/` which is used to retrieve users with jwt for them
 To authenticate a request, add an authorization header `Authorization: Bearer <AUTH_TOKEN_HERE>`
